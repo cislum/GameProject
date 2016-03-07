@@ -1,0 +1,70 @@
+
+body {
+  width: 800px;
+
+  background: url(https://49.media.tumblr.com/tumblr_m7yfon9GoQ1qeh4lio1_500.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.container {
+  width: 100%;
+  height: 140px;
+  perspective: 100px;
+  }
+
+#div1 {
+  position: absolute;
+  height: 180px;
+  width: 130px;
+  top: 200px;
+  left: 200px;
+  background-color: green;
+  opacity: none;
+  background: url(http://s18.postimg.org/himom3tr9/storm_big.jpg);
+  z-index: 1;
+
+  
+}
+#div1 { 
+  transform: rotatex(   80deg ) ; 
+}
+
+
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  transform-style: preserve-3d;
+  transition-duration: 1.5s;
+  opacity: .5;
+
+}
+
+#carousel figure {
+  position: absolute;
+
+
+  width: 99%;
+  height: 181.5px;
+  background-image: url(http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2012/08/Screen-Shot-2012-08-10-at-2.48.14-AM.png);
+  border: solid pink 3px;
+
+}
+
+
+#carousel figure:nth-child(1) { transform: rotatex(   0deg ) translateZ( 250px ); }
+#carousel figure:nth-child(2) { transform: rotatex(  40deg ) translateZ( 250px ); }
+#carousel figure:nth-child(3) { transform: rotatex(  80deg ) translateZ( 250px ); }
+#carousel figure:nth-child(4) { transform: rotatex( 120deg ) translateZ( 250px ); }
+#carousel figure:nth-child(5) { transform: rotatex( 160deg ) translateZ( 250px ); }
+#carousel figure:nth-child(6) { transform: rotatex( 200deg ) translateZ( 250px ); }
+#carousel figure:nth-child(7) { transform: rotatex( 240deg ) translateZ( 250px ); }
+#carousel figure:nth-child(8) { transform: rotatex( 280deg ) translateZ( 250px ); }
+#carousel figure:nth-child(9) { transform: rotatex( 320deg ) translateZ( 250px ); }
+
